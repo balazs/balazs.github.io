@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="manifest" href="Manifest.json" />
+<link rel="prefetch" href="sw.js" />
+
+<body onload="onLoad()">
+<style>
+div {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 1em;
+}
+button {
+    disabled: true;
+}
+#curl {
+    display: none;
+}
+#received {
+    display: none;
+    background-color: #aaff80;
+    font: bold;
+}
+</style>
+
+<div id='received'>
+Opened via push message!
+</div>
+<div>
+<button id='btnReg' onclick="registerPush()">Register</button>
+<button id='btnUnreg' onclick="unregisterPush()">Unregister</button>
+</div>
+<div>
+<span>Service worker active: </span><input type="checkbox" id="chbxSW" />
+<span>Push registered: </span><input type="checkbox" id="chbxPushReg" />
+</div>
+<div id="curl">
+Curl command:<br/>
+<code id="curlcmd"></code>
+</div>
+
+<script>
+var GCM_URL='https://android.googleapis.com/gcm/send/'
+
+function E(id) {
+    return document.getElementById(id);
+}
+
+E('chbxSW').checked = false;
+E('chbxPushReg').checked = false;
+
+function curlHelp(reg) {
+    var regId = reg.endpoint.substr(GCM_URL.length);
+
+    var txt = 'curl --header "Authorization: key=<key>" --header "Content-Type:application/json"' +
+              ' https://android.googleapis.com/gcm/send' +
+              ' -d "{\\\"registration_ids\\\":[\\\"' + regId + '\\\"]}"';
+
+    E('curlcmd').innerText = txt;
+    E('curl').style.display = 'block';
+
+    console.info('Use this command to send a message to yourself:');
+    console.info(txt);
+}
+
+function showDidRegisterServiceWorker() {
+    E('btnReg').disabled = false;
+    E('chbxSW').checked = true;
+}
+
+function showDidRegisterPush(subsciption) {
+    E('chbxPushReg').checked = true;
+    E('btnReg').disabled = true;
+    E('btnUnreg').disabled = false;
+
+    curlHelp(subsciption);
+}
+
+function showDidReceive() {
+    E('received').style.display = 'block';
+}
+
+function showDidUnregPush() {
+    // TBD
+}
+</script>
+<script src="main.js"></script>
+</body>
+
+</html>
