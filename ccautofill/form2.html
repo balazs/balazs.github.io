@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<style>
+</style>
+<form action="handler.php" method="post">
+<div><label>given-name
+<input type="text" id="fn" autocomplete="given-name" value="Bob"/></label></div>
+<div><label>family
+<input type="text" id="ln" autocomplete="family-name" value="Bob" /></label></div>
+<div><label>address
+<input type="text" id="sa" autocomplete="street-address" value="Elm St." /></label></div>
+<div><label>line1
+<input type="text" id="a1" autocomplete="address-line1" value="Dumptown"/></label></div>
+<div><label>line2
+<input type="text" id="a2" autocomplete="address-line2" value="MA"/></label></div>
+<div><label>postcode
+<input type="text" id="zc" autocomplete="postal-code" value="02155"/></label></div>
+<div><label>email
+<input type="text" id="em" autocomplete="email" value="shutup@foo.com"/></label></div>
+<div><label for="co">country</label>
+<select id="co" autocomplete="country">
+<option value="US">United States</option>
+<option value="BR">Brazil</option>
+</select></div>
+<div><label>Card Number:
+<input type="text" pattern="[0-9]{13,16}" autocomplete="cc-number" name="cc-number"/></label></div>
+<div><label>Expiration data:
+<input type="date" autocomplete="cc-exp" name="cc-exp" /></label></div>
+<input type="submit" />
+</form>
+</body>
+</html>

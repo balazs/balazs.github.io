@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<style src="base.css"></style>
+
+<form action="handler.php" method="post">
+<div>Credit card input</div>
+<div><label>Full Name:
+<input type="text" autocomplete="cc-name" name="cc-name" value="Foo Fool"/></label></div>
+<div><label>email:
+<input type="email" autocomplete="email" name="cc-email" value="foo@wtfmail.com"/></label></div>
+<div><label>Card Number:
+<input type="text" pattern="[0-9]{13,16}" autocomplete="cc-number" name="cc-number"/></label></div>
+<div><label>Expiration data:
+<input type="month" autocomplete="cc-exp" name="cc-exp" /></label></div>
+
+<!-- <div><label>Expire date (month, year):
+<select autocomplete="cc-exp-month">
+<option value="1" selected>Jan</option>
+</select>
+<select autocomplete="cc-exp-year">
+<option value="2020" selected>2020</option>
+</select>
+</label></div> -->
+
+<div><input type="submit" /></div>
+</form>
+
+</body>
+</html>
