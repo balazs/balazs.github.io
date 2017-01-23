@@ -1,32 +1,37 @@
-{
-    "Promos": [{
-        "promoType": "INSTALL",
-        "promoApps": "ALL",
-        "promoImg": "https://smps-resource.s3.amazonaws.com/pay/sys/prd/InstallPromo1.png",
-        "promoClickIntent ": {
-            "action": "android.intent.action.VIEW",
-            "data": "https://play.google.com/store/apps/details?id=com.samsung.android.spay"
-        }
-    }, {
-        "promoType": "ADD-CARD",
-        "promoApps": "ALL",
-        "promoImg": "https://smps-resource.s3.amazonaws.com/pay/sys/prd/AddCardPromo2.png",
-        "promoClickIntent": {
-            "action": "com.samsung.android.spay.intent.ACTION_ADD_CARD"
-        }
-    }, {
-        "promoType": "ADD-CARD",
-        "promoApps": "SBROWSER",
-        "promoImg": "https://paytest.github.io/promotaion_demo_img.jpg",
-        "promoClickIntent": {
-            "action": "com.samsung.android.spay.intent.ACTION_ADD_CARD"
-        }
-    }, {
-        "promoType": "UPGRADE",
-        "promoApps": "ALL",
-        "promoImg": "https://smps-resource.s3.amazonaws.com/pay/sys/prd/UpgradePromo4.png",
-        "promoClickIntent": {
-            "action": "com.samsung.android.spay.intent.ACTION_UPGRADE"
-        }
-    }]
-}
+[{
+    "promoType": "INSTALL",
+    "promoApps": "ALL",
+    "promoImg": "https://smps-resource.s3.amazonaws.com/pay/sys/prd/InstallPromo1.jpg",
+    "promoClickIntent": {
+        "action": "android.intent.action.VIEW",
+        "data": "https://play.google.com/store/apps/details?id=com.samsung.android.spay"
+    }
+}, {
+    "promoType": "NEW-USER",
+    "promoApps": "ALL",
+    "promoImg": "https://smps-resource.s3.amazonaws.com/pay/sys/prd/AddCardPromo2.jpg",
+    "promoClickIntent": {
+        "action": "com.samsung.android.spay.intent.ACTION_ADD_CARD"
+    }
+}, {
+    "promoType": "ADD-FIRST-CARD",
+    "promoApps": "SBROWSER",
+    "promoImg": "https://smps-resource.s3.amazonaws.com/pay/sys/prd/AddCardPromo3.jpg",
+    "promoClickIntent": {
+        "action": "com.samsung.android.spay.intent.ACTION_ADD_CARD"
+    }
+}, {
+    "promoType": "ADD-CARD",
+    "promoApps": "APP",
+    "promoImg": "https://smps-resource.s3.amazonaws.com/pay/sys/prd/AddCardPromo2.jpg",
+    "promoClickIntent": {
+        "action": "com.samsung.android.spay.intent.ACTION_ADD_CARD"
+    }
+}, {
+    "promoType": "UPGRADE",
+    "promoApps": "ALL",
+    "promoImg": "https://smps-resource.s3.amazonaws.com/pay/sys/prd/UpgradePromo4.jpg",
+    "promoClickIntent": {
+        "action": "com.samsung.android.spay.intent.ACTION_UPGRADE"
+    }
+}]
