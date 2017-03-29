@@ -1,7 +1,8 @@
 [{
     "promoType": "INSTALL",
     "promoApps": "ALL",
-    "promoImg": "https://smps-resource.s3.amazonaws.com/pay/sys/prd/InstallPromo1.jpg",
+    "promoImg": "http://balazs.github.io/spaypromos/Install_PN.jpg",
+    "promoImgInline": "http://balazs.github.io/spaypromos/Install_Inline.jpg",
     "promoClickIntent": {
         "intentType" : "ACTIVITY",
         "action": "android.intent.action.VIEW",
@@ -10,7 +11,8 @@
 }, {
     "promoType": "NEW-USER",
     "promoApps": "ALL",
-    "promoImg": "https://smps-resource.s3.amazonaws.com/pay/sys/prd/AddCardPromo2.jpg",
+    "promoImg": "http://balazs.github.io/spaypromos/Newuser_PN.jpg",
+    "promoImgInline": "http://balazs.github.io/spaypromos/Newuser_Inline.jpg",
     "promoClickIntent": {
         "intentType" : "SERVICE",
         "action": "com.samsung.android.spay.intent.ACTION_ADD_CARD"
@@ -18,15 +20,17 @@
 }, {
     "promoType": "ADD-FIRST-CARD",
     "promoApps": "SBROWSER",
-    "promoImg": "https://smps-resource.s3.amazonaws.com/pay/sys/prd/AddCardPromo3.jpg",
+    "promoImg": "http://balazs.github.io/spaypromos/Add1stcard_PN.jpg",
+    "promoImgInline": "http://balazs.github.io/spaypromos/Add1stcard_Inline.jpg",
     "promoClickIntent": {
         "intentType" : "SERVICE",
         "action": "com.samsung.android.spay.intent.ACTION_ADD_CARD"
     }
 }, {
     "promoType": "ADD-CARD",
-    "promoApps": "APP",
-    "promoImg": "https://smps-resource.s3.amazonaws.com/pay/sys/prd/AddCardPromo2.jpg",
+    "promoApps": "ALL",
+    "promoImg": "http://balazs.github.io/spaypromos/Addcard_PN.jpg",
+    "promoImgInline": "http://balazs.github.io/spaypromos/Addcard_Inline.jpg",
     "promoClickIntent": {
         "intentType" : "SERVICE",
         "action": "com.samsung.android.spay.intent.ACTION_ADD_CARD"
@@ -34,10 +38,11 @@
 }, {
     "promoType": "UPGRADE",
     "promoApps": "ALL",
-    "promoImg": "https://smps-resource.s3.amazonaws.com/pay/sys/prd/UpgradePromo4.jpg",
+    "promoImg": "http://balazs.github.io/spaypromos/Upgrade_PN.jpg",
+    "promoImgInline": "http://balazs.github.io/spaypromos/Upgrade_Inline.jpg",
     "promoClickIntent": {
         "intentType" : "ACTIVITY",
         "action": "android.intent.action.VIEW",
-        "data": "samsungpay://launch?action=aboutsamsungpay"
+        "data": "samsungpay://launch?action=main"
     }
 }]
