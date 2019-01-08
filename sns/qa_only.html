@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Quick Access</title>
+  <meta name="author" content="Samsung">
+  <meta name="description" content="Quick Access">
+  <meta name="theme-color" content="">
+  <meta name="keywords" content="news, Samsung, Samsung News">
+  <!-- 2019-01-07 18:11:26.036597 -->
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="stylesheet" href="css/qa-styles.min.css">
+</head>
+<body>
+
+<noscript>
+  <div class="alert alert-danger" role="alert" style="margin-top:100px">
+    Please enable Javascript to view the content on this page.</div>
+</noscript>
+
+
+<div id="main_page">
+  <div id="quick-access-container">
+    <div class="quick-access" id="quick-access">
+      <div class="container" id="quick-access-tab-container" tabindex="-1"></div>
+      <div id="no-items">
+         <img class='quickaccess_noicon' src='img/qa/internet_no_item.png'>
+         <p class="no-qa-p1">No Quick access shortcuts</p>
+         <p class="no-qa-p2">Add links to your favorite websites here</p>
+      </div>
+      <div class="page-bar">
+         <button id="btn_edit">EDIT</button>
+         <button id="btn_next">
+          <img class="quickaccess_nexticon" src="img/qa/internet_ic_next.png">
+        </button>
+      </div>
+      <div id="dots"></div>
+    </div>
+    <script>
+      let startTime = performance.now();
+      let container = document.getElementById('quick-access-tab-container');
+      let firstpage = localStorage.getItem('renderedQApageOne');
+      if (firstpage) {
+        container.innerHTML = '<div class="quickaccess-page" style="display: block;">' + firstpage + '</div>';
+        document.getElementById('no-items').style.display = 'none';
+      }
+      let secondpage = localStorage.getItem('renderedQApageTwo');
+      if (secondpage) {
+        console.log('second page cached');
+        container.innerHTML += '<div class="quickaccess-page" style="display: none;">' + secondpage + '</div>';
+      }
+      let endTime = performance.now();
+      let totalTimeCache = (endTime - startTime).toFixed(1);
+      console.log('Loading time for cached QA string - ' + totalTimeCache + " ms.")
+    </script>
+  </div>
+  <div id="maincategories" class="main-categories">
+    <div class="dh_feed">
+      <button id="btn-setting">
+        <img class="img-btn-setting" title="Setting" src="img/qa/internet_multi_cp_home-page_category_tab_ic_setting2.png">
+      </button>
+    </div>
+    <div class="main-categories-tab" id="main-categories-tab">
+    </div>
+    <div class="main-categories-container" id="main-categories-container">
+      <li class="loading-element" style="display: none">
+        <div class="loading-container timing-function">
+          <img class="loading-img timing-function loading-one" src="img/qa/loading_1.png">
+          <img class="loading-img timing-function loading-two" src="img/qa/loading_1.png">
+          <img class="loading-img timing-function loading-three" src="img/qa/loading_2.png">
+          <img class="loading-img timing-function loading-four" src="img/qa/loading_2.png">
+        </div>
+      </li>
+    </div>
+  </div>
+</div>
+
+  <script d-src="js/qa/lib/event_listener.js"></script>
+  <script d-src="js/qa/utils/toast.js"></script>
+  <script d-src="js/qa/utils/common.js"></script>
+  <script d-src="js/qa/data/categories_model.js"></script>
+  <script d-src="js/qa/ui/main_categories_content.js"></script>
+  <script d-src="js/qa/ui/categories_settings.js"></script>
+  <script d-src="js/qa/ui/categories_settings_all.js"></script>
+  <script d-src="js/qa/ui/main_categories.js"></script>
+  <script d-src="js/qa/ui/quick_access.js"></script>
+  <script d-src="js/qa/ui/add_quick_access.js"></script>
+  <script d-src="js/qa/ui/quick_access_settings.js"></script>
+  <script d-src="js/qa/ui/rename_quick_access.js"></script>
+  <script d-src="js/qa/ui/first_time_user.js"></script>
+  <script d-src="js/qa/controller.js"></script>
+  <script d-src="js/qa/data/data.js"></script>
+  <script d-src="js/qa/lib/dragdrop.js"></script>
+  <script d-src="js/view/dialog.js"></script>
+  <script d-src="js/qa/main.js"></script>
+</body>
+</html>
