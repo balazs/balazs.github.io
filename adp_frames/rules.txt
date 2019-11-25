@@ -1,0 +1,3 @@
+balazs.github.io/adp_frames##.testcase-elemhide
+||balazs.github.io/adp_frames/image.jpg
+@@balazs.github.io/adp_frames/frame/$document
