@@ -1,0 +1,41 @@
+{
+    "updatePeriod": 14,
+    "QATargetingItems": {
+        "country": "US",
+        "itemCount": 1,
+        "items": [
+            {
+                "URLInfo": {
+                    "siteUrl": "https://r.internet.apps.samsung.com/refer?url=https%3A%2F%2Fww55.siteplug.com%2Fsssdomweb%3Fenk%3Ddabdef017e0d75ed98027fb7d9b3169a75455df989daf37c276a49e0d9b54340bcfb90634a3d10e1b02644a6b1ad86cf3acec33b49c3549d2eb2f663d65f3654",
+                    "targeUrl": "https://walmart.com",
+                },
+                "URLInfo": {
+                    "siteUrl": "https://r.internet.apps.samsung.com/refer?url=https%3A%2F%2Fww55.siteplug.com%2Fsssdomweb%3Fenk%3Ddabdef017e0d75ed98027fb7d9b3169a75455df989daf37c847beb151f58c840bcfb90634a3d10e174f2b1cfccd431323acec33b49c3549d2eb2f663d65f3654",
+                    "targetUrl": "https://rakuten.com",
+                },
+                "URLInfo": {
+                    "siteUrl": "https://r.internet.apps.samsung.com/refer?url=http%3A%2F%2Fwww.tkqlhce.com%2Fclick-8737448-13771918%3Fsid%3DSamsungQuickAccess",
+                    "targetUrl": "https://wayfair.com",
+                },
+                "URLInfo": {
+                    "favIconExists": true,
+                    "numberOfTouchIcons": 1,
+                    "siteUrl": "https://r.internet.apps.samsung.com/refer?url=https%3A%2F%2Fww55.siteplug.com%2Fsssdomweb%3Fenk%3Ddabdef017e0d75ed98027fb7d9b3169a75455df989daf37c51d582b994f202498fe0f1c6fca5e818e36e8f9d48a6b2da19ab4a07a125566e72b2ddf71a9fe4af",
+                    "targetUrl": "https://expedia.com/",
+                    "touchIconsExists": true,
+                    "siteName": "Google",
+                    "predominantColor": "#4989F4",
+                    "touchIcons": [
+                        {
+                            "iconSize": "112X112",
+                            "id": 6403,
+                            "isAdministered": true,
+                            "lastModified": "2015-10-08 14:45:11.0",
+                            "iconPath": "https://d3c3tktxbub3yt.cloudfront.net/TOUCH_google.com_112x112.png"
+                        }
+                    ]
+                }
+            }
+         ]
+    }
+}
