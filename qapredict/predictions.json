@@ -2,7 +2,7 @@
     "updatePeriod": 14,
     "QATargetingItems": {
         "country": "US",
-        "itemCount": 1,
+        "itemCount": 4,
         "items": [
             {
                 "URLInfo": {
