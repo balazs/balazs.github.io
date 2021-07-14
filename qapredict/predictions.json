@@ -6,14 +6,23 @@
         "items": [
             {
                 "URLInfo": {
+                    "favIconExists": false,
+                    "touchIconsExists": false,
+                    "siteName": "Walmart",
                     "siteUrl": "https://r.internet.apps.samsung.com/refer?url=https%3A%2F%2Fww55.siteplug.com%2Fsssdomweb%3Fenk%3Ddabdef017e0d75ed98027fb7d9b3169a75455df989daf37c276a49e0d9b54340bcfb90634a3d10e1b02644a6b1ad86cf3acec33b49c3549d2eb2f663d65f3654",
                     "targeUrl": "https://walmart.com"
                 },
                 "URLInfo": {
+                    "favIconExists": false,
+                    "touchIconsExists": false,
+                    "siteName": "Rakuten",
                     "siteUrl": "https://r.internet.apps.samsung.com/refer?url=https%3A%2F%2Fww55.siteplug.com%2Fsssdomweb%3Fenk%3Ddabdef017e0d75ed98027fb7d9b3169a75455df989daf37c847beb151f58c840bcfb90634a3d10e174f2b1cfccd431323acec33b49c3549d2eb2f663d65f3654",
                     "targetUrl": "https://rakuten.com"
                 },
                 "URLInfo": {
+                    "favIconExists": false,
+                    "touchIconsExists": false,
+                    "siteName": "Wayfair",
                     "siteUrl": "https://r.internet.apps.samsung.com/refer?url=http%3A%2F%2Fwww.tkqlhce.com%2Fclick-8737448-13771918%3Fsid%3DSamsungQuickAccess",
                     "targetUrl": "https://wayfair.com"
                 },
